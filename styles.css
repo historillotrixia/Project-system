@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(violet.jpg);
+    background-image: url(capitol.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,9 +21,9 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 50px;
-    background: transparent;
+    background: rgb(214, 64, 4);
     border: 2px solid rgba(255,255,255,.2);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(30px);
     display: flex;
     justify-content: space-between;
     align-items: center;
