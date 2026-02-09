@@ -6,6 +6,7 @@
 }
 
 body{
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -21,7 +22,7 @@ header{
     left: 0;
     width: 100%;
     padding: 20px 50px;
-    background: rgb(241, 164, 126);
+    background: rgb(133, 219, 52);
     border: 2px solid rgba(255,255,255,.2);
     backdrop-filter: blur(30px);
     display: flex;
@@ -83,6 +84,7 @@ header .navigation a:hover::after{
 }
 
 .wrapper{
+    display: none;
     width: 400px;
     padding: 30px 40px;
     background: transparent;
@@ -90,10 +92,19 @@ header .navigation a:hover::after{
     backdrop-filter: blur(15px);
     color: #fff;
     border-radius: 15px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 100;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.wrapper.active {
+    display: flex; 
+    flex-direction: column;
+    opacity: 1;
 }
 
 .wrapper h1{
@@ -185,11 +196,11 @@ header .navigation a:hover::after{
     cursor: pointer;
 }
 
-.wrapper .icon-close :hover{
+.wrapper .icon-close:hover{
     background-color: #ebf3ec;
     color: #070606;
     border-radius: 25%;
-      border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }   
 
 .wrapper .register-link{
