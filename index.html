@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Trial</title>
+    <link rel="styleshet"  href="style.css">
+ <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Menu bar */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .content {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .divider {
+    width: 60%;
+    margin: 30px auto;
+    border: 2px solid #333;
+    }
+    </style>
+</head>
+
+<script>
+    function showHome() {
+        document.getElementById("homeSection").style.display = "block";
+    }
+    function showHome() {
+        const section = document.getElementById("homeSection");
+        section.style.display =
+            section.style.display === "none" ? "block" : "none";
+    }
+    function showAbout() {
+        document.getElementById("aboutSection").style.display = "block";
+    }
+    function showAbout() {
+        const section = document.getElementById("aboutSection");
+        section.style.display =
+            section.style.display === "none" ? "block" : "none";
+    }
+</script>
+
+<body>
+
+    <!-- Menu Bar -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showHome()">Home</a></li>
+            <li><a href="#" onclick="showAbout()">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> <!--home-->
+   <div id="homeSection" class="content" style="display: none;">
+    <hr class="divider">
+    <h1>ARAY MO PAKAK</h1>
+    <p>Teh anong accomplishment natin today?</p>
+    <p>Trixia G. Historillo</p>
+    </div>
+
+    </nav> <!--about-->
+   <div id="aboutSection" class="content" style="display: none;">
+    <hr class="divider">
+    <h1>About Us</h1>
+    <p>This is a trial website for learning purposes.</p>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <h1>This website is just a trial</h1>
+        <p>Welcome to my Website 🚀</p>
+        <p2>Tolala Serye</p2>
+    </div>
+</body>
+</html>
