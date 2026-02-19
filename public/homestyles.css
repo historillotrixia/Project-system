@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: white no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 120px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background: rgb(133, 219, 52);
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header .navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #110d0d;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    gap: 15px;
+}   
+
+header .navigation{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo{
+    color: #110d0d;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.upload-btn{
+    width: 80px;
+    height: 40px;
+    background:beige;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #110d0d;
+    transition: .5s;
+    display: flex;              
+    align-items: center;      
+    justify-content: center;
+}
+
+header .upload-btn:hover{
+    background-color: #79ee89;
+    color: #0c0a0a; 
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    border: white solid 2px;
+    border-radius: 40px;
+    font-size: 14px;
+    width: 280px;
+    padding: 5px 15px;
+    outline: transparent;
+    gap: 10px;
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    background: transparent;
+    color:#000;
+}
+
+.search-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnLogout-popup{
+    width: 80px;
+    height: 40px;
+    background: beige;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0e0c0c;
+    transition: .5s;
+}
+header .btnLogout-popup:hover{
+    background-color: #79ee89;
+    color: #0c0a0a;    
+}
